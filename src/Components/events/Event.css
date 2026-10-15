@@ -1,0 +1,463 @@
+
+.wedding-events {
+  --maroon: #8b1e2d;
+  --gold: #c9973e;
+  --cream: #fff5e5;
+  --brown: #624b3c;
+
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  overflow: hidden;
+  padding: 68px 24px 48px;
+  background-color: #922719;
+  background-image: url("/images/bengali-alpana-bg.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.wedding-events-content {
+  width: 100%;
+  max-width: 1050px;
+  margin-inline: auto;
+}
+
+/* Heading */
+
+.wedding-events-header {
+  margin: 0 auto 32px;
+  text-align: center;
+  color: var(--cream);
+}
+
+.wedding-events-ornament {
+  margin-bottom: 5px;
+  color: #f4d9a6;
+  font-size: 22px;
+}
+
+.wedding-events-header h2 {
+  margin: 0;
+  color: #fff5e5;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  line-height: 1.6;
+  text-shadow: 0 2px 8px rgba(55, 10, 5, 0.3);
+}
+
+.wedding-events-header > p {
+  margin: 4px 0 0;
+  color: #ffebc8;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.wedding-events-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 13px;
+  color: #f1cb83;
+}
+
+.wedding-events-divider span {
+  width: 34px;
+  height: 1px;
+  background: #e7bf78;
+}
+
+.wedding-events-divider b {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* Cards */
+
+.wedding-events-grid {
+  display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 14px;
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+/* Decorative curved card */
+
+.wedding-event-card {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 18px 18px;
+  border: 1px solid #d5a653;
+  /* border-radius: 85px 85px 22px 22px; */
+  background: linear-gradient(
+    155deg,
+    #fff8ec 0%,
+    #f8e9d2 100%
+  );
+  box-shadow:
+    inset 0 0 0 4px #fff8ec,
+    inset 0 0 0 5px #e4c17f,
+    0 8px 20px rgba(52, 10, 5, 0.16);
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.wedding-event-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    inset 0 0 0 4px #fff8ec,
+    inset 0 0 0 5px #e4c17f,
+    0 14px 25px rgba(52, 10, 5, 0.24);
+}
+
+
+
+/* Event symbol */
+
+.wedding-event-symbol {
+  display: grid;
+  width: 58px;
+  height: 52px;
+  flex-shrink: 0;
+  place-items: center;
+  margin-top: 9px;
+  font-size: 30px;
+}
+
+/* Title */
+
+.wedding-event-card h5 {
+  margin: 2px 0 0;
+  color: var(--maroon);
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(19px, 2vw, 25px);
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+/* Divider */
+
+.wedding-event-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0 10px;
+  color: var(--gold);
+}
+
+.wedding-event-divider span {
+  width: 25px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.wedding-event-divider b {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+/* Minimal caption */
+
+.wedding-event-card > p {
+  max-width: 240px;
+  margin: 0;
+  color: var(--brown);
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* Card bottom decoration */
+
+.wedding-event-flourish {
+  margin-top: 13px;
+  color: #b88a42;
+  font-size: 14px;
+}
+
+.wedding-event-flourish span {
+  margin-inline: 6px;
+  color: var(--maroon);
+  font-size: 10px;
+}
+
+/* Closing message */
+
+.wedding-events-footer {
+  margin-top: 26px;
+  text-align: center;
+  color: #fff3dd;
+}
+
+.wedding-events-footer .wedding-events-divider {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.wedding-events-footer > p {
+  margin: 0;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.wedding-events-footer h3 {
+  margin: 7px 0 0;
+  color: #ffe0a5;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.wedding-events-footer h3 span {
+  margin-inline: 7px;
+  color: #ffd27c;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  .wedding-events {
+    padding: 55px 20px 40px;
+  }
+
+  .wedding-events-grid {
+    gap: 14px;
+  }
+
+  .wedding-event-card {
+    padding: 24px 11px 16px;
+    border-radius: 65px 65px 17px 17px;
+  }
+
+  .wedding-event-card h3 {
+    font-size: 19px;
+  }
+
+  .wedding-event-card > p {
+    font-size: 11px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 580px) {
+  .wedding-events {
+    padding: 45px 18px 35px;
+    background-position: center;
+    background-size: auto 100%;
+  }
+
+  .wedding-events-header {
+    margin-bottom: 26px;
+  }
+
+  .wedding-events-header h2 {
+    font-size: 27px;
+  }
+
+  .wedding-events-header > p {
+    font-size: 13px;
+  }
+
+  .wedding-events-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    max-width: 320px;
+    margin-inline: auto;
+  }
+
+  .wedding-event-card {
+    width: 100%;
+    padding: 21px 20px 16px;
+    border-radius: 65px 65px 16px 16px;
+  }
+
+  .wedding-event-symbol {
+    height: 43px;
+    font-size: 27px;
+  }
+
+  .wedding-event-card h3 {
+    font-size: 22px;
+  }
+
+  .wedding-event-card > p {
+    font-size: 12px;
+  }
+
+  .wedding-events-footer {
+    margin-top: 25px;
+  }
+
+  .wedding-events-footer > p {
+    font-size: 13px;
+  }
+
+  .wedding-events-footer h3 {
+    font-size: 23px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .wedding-event-card,
+  .wedding-event-card:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+
+
+
+/* Fix section spacing and preserve the alpana border */
+
+.wedding-events {
+  box-sizing: border-box;
+  padding: 55px 24px 110px;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Keep all content inside the safe central area */
+
+.wedding-events-content {
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+/* Compact heading */
+
+.wedding-events-header {
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.wedding-events-header h2 {
+  margin: 0;
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.6;
+}
+
+.wedding-events-header > p {
+  margin-top: 4px;
+  line-height: 1.8;
+}
+
+/* Keep cards smaller and evenly aligned */
+
+.wedding-events-grid {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+}
+
+.wedding-event-card {
+  min-width: 0;
+  height: 100%;
+  padding: 4px;
+}
+
+.wedding-event-card-inner {
+  box-sizing: border-box;
+  min-height: 0;
+  height: 100%;
+  padding: 20px 14px 16px;
+}
+
+.wedding-event-symbol {
+  height: 42px;
+  margin-top: 6px;
+  font-size: 27px;
+}
+
+.wedding-event-card h3 {
+  margin-top: 2px;
+  font-size: clamp(18px, 1.8vw, 23px);
+  line-height: 1.7;
+}
+
+.wedding-event-card > p {
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* Footer stays close to the cards */
+
+.wedding-events-footer {
+  position: relative;
+  margin-top: 20px;
+  padding: 0 12px;
+  text-align: center;
+}
+
+.wedding-events-footer .wedding-events-divider {
+  margin: 0 0 8px;
+}
+
+.wedding-events-footer > p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+/* Mobile layout */
+
+@media (max-width: 580px) {
+  .wedding-events {
+    padding: 42px 18px 90px;
+    background-size: auto 100%;
+    background-position: center;
+  }
+
+  .wedding-events-header {
+    margin-bottom: 22px;
+  }
+
+  .wedding-events-header h2 {
+    font-size: 26px;
+  }
+
+  .wedding-events-grid {
+    max-width: 320px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .wedding-event-card-inner {
+    padding: 20px 18px 16px;
+  }
+
+  .wedding-event-card h3 {
+    font-size: 21px;
+  }
+
+  .wedding-event-card > p {
+    font-size: 12px;
+  }
+
+  .wedding-events-footer {
+    margin-top: 22px;
+  }
+}

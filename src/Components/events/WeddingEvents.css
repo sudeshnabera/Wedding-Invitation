@@ -1,0 +1,278 @@
+
+.wedding-events {
+  --cream: #fff3df;
+  --gold: #e4c17f;
+  --maroon: #8b1e2d;
+
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 22px 24px;
+  background-color: #8b291f;
+  background-image: url("/images/bengali-alpana-bg.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.wedding-events-content {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 110px 0px 115px 0px;
+}
+
+.wedding-events-header {
+  margin-bottom: 16px;
+  color: var(--cream);
+  text-align: center;
+  
+}
+
+.wedding-events-header h2 {
+  margin: 0;
+  color: var(--cream);
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.6;
+  font: bold;
+}
+
+.wedding-events-header p {
+  margin: 2px 0;
+  color: #f9dfb4;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 12px;
+}
+
+.events-flower {
+  display: block;
+  margin-top: 4px;
+  color: var(--gold);
+  font-size: 17px;
+}
+
+/* Compact timeline */
+
+.mini-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  height: 220px;
+  margin: 0 auto;
+}
+
+/* Gold route */
+
+.timeline-track {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  right: 2%;
+  left: 2%;
+  height: 2px;
+  background: var(--gold);
+  box-shadow: 0 0 5px rgba(255, 224, 165, 0.25);
+}
+
+.timeline-track::before,
+.timeline-track::after {
+  position: absolute;
+  top: -5px;
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.timeline-track::before {
+  left: -12px;
+  content: "‹‹";
+}
+
+.timeline-track::after {
+  right: -12px;
+  content: "››";
+}
+
+/* Each stop */
+
+.timeline-event {
+  position: relative;
+  min-width: 0;
+}
+
+.timeline-card {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  width: calc(100% - 12px);
+  max-width: 180px;
+  min-height: 85px;
+  flex-direction: column;
+  align-items: center;
+  padding: 9px 7px 7px;
+  border: 1px solid #dfbd7c;
+  outline: 3px solid rgba(255, 243, 223, 0.85);
+  background: linear-gradient(145deg, #fff8ed, #f6e7cf);
+  color: var(--maroon);
+  text-align: center;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 10px rgba(45, 8, 5, 0.16);
+}
+
+.event-1 .timeline-card,
+.event-3 .timeline-card {
+  top: 5px;
+}
+
+.event-2 .timeline-card,
+.event-4 .timeline-card {
+  bottom: 5px;
+}
+
+.timeline-number {
+  margin-bottom: 3px;
+  color: #9b7638;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 9px;
+}
+
+.timeline-card h3 {
+  margin: 0;
+  color: var(--maroon);
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(13px, 1.6vw, 17px);
+  line-height: 1.7;
+}
+
+.timeline-divider {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 3px 0;
+  color: #bd9145;
+  font-size: 8px;
+}
+
+.timeline-divider span {
+  width: 15px;
+  height: 1px;
+  background: #d3ad69;
+}
+
+.timeline-card p {
+  margin: 0;
+  color: #765b47;
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-size: 9px;
+  line-height: 1.7;
+}
+
+.timeline-symbol {
+  margin-top: 3px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Gold stops attached to the line */
+
+.timeline-dot {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff0d0;
+  border-radius: 50%;
+  background: #c9973e;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 2px rgba(201, 151, 62, 0.25);
+}
+
+/* Footer */
+
+.wedding-events-footer {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--cream);
+}
+
+.wedding-events-footer p {
+  margin: 0;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.wedding-events-footer h3 {
+  margin: 3px 0 0;
+  color: #ffe0a5;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.wedding-events-footer h3 span {
+  margin: 0 5px;
+}
+
+/* Mobile */
+
+@media (max-width: 540px) {
+  .wedding-events {
+    padding: 28px 14px 24px;
+    background-size: auto 100%;
+  }
+
+  .wedding-events-header {
+    margin-bottom: 18px;
+  }
+
+  .wedding-events-header h2 {
+    font-size: 24px;
+  }
+
+  .mini-timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: auto;
+    gap: 18px 8px;
+  }
+
+  .timeline-track,
+  .timeline-dot {
+    display: none;
+  }
+
+  .timeline-event {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .timeline-card,
+  .event-1 .timeline-card,
+  .event-2 .timeline-card,
+  .event-3 .timeline-card,
+  .event-4 .timeline-card {
+    position: relative;
+    inset: auto;
+    left: auto;
+    width: 100%;
+    max-width: 190px;
+    min-height: 110px;
+    transform: none;
+  }
+
+  .timeline-card h3 {
+    font-size: 16px;
+  }
+
+  .timeline-card p {
+    font-size: 10px;
+  }
+
+  .wedding-events-footer {
+    margin-top: 22px;
+  }
+}

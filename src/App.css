@@ -1,0 +1,210 @@
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(5deg);
+  }
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(-4deg);
+  }
+}
+
+@keyframes bride {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+}
+
+@keyframes groom {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-fade-down {
+  animation: fadeDown 1s ease-out both;
+}
+
+.animate-fade-up {
+  animation: fadeUp 1s ease-out 0.3s both;
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-bride {
+  animation: bride 4s ease-in-out infinite;
+}
+
+.animate-groom {
+  animation: groom 4s ease-in-out 0.5s infinite;
+}
+
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes couple {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.96);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(5deg);
+  }
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(-4deg);
+  }
+}
+
+.animate-fade-down {
+  animation: fadeDown 0.9s ease-out both;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.9s ease-out 0.3s both;
+}
+
+.animate-couple {
+  animation: couple 1.2s ease-out 0.4s both;
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+
+@keyframes storyEnter {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes illustrationEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (min-width: 768px) {
+  .story-content {
+    animation: storyEnter 0.9s ease-out both;
+  }
+}
+
+.story-illustration {
+  animation: illustrationEnter 1s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-content,
+  .story-illustration {
+    animation: none;
+  }
+}
