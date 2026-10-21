@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Home from "./Components/Home";
-import "./app.css";
+import "./App.css";
 import WeddingDivider from "./Components/divider/WeddingDivider";
 
 const App = () => {
