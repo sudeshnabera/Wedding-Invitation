@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Home from "./Components/Home";
 import "./app.css";
+import WeddingDivider from "./Components/divider/WeddingDivider";
 
 const App = () => {
   const [showHome, setShowHome] = useState(false);
@@ -45,20 +46,23 @@ const App = () => {
         <div className="w-full max-w-5xl! text-center">
 
           {/* Blessing */}
-          <p className="animate-fade-down font-bengali text-sm tracking-[0.3em] text-[#9b1c31]">
-            শ্রী শ্রী গণেশায় নমঃ
+          <p className="animate-fade-down font-bengali text-sm  text-[#9b1c31]">
+            যদিদং হৃদয়ং মম,
           </p>
-
+          <p className="animate-fade-down font-bengali text-sm latter text-[#9b1c31]">
+            তদস্তু হৃদয়ং তব
+          </p>
+           <WeddingDivider variant="filigree" />
           {/* Heading */}
           <h1
             className="
               mt-4
-              animate-fade-up
-              font-bengali
+              animate-fade-up!
+              font-bengali!
               text-2xl!
-              font-semibold
+              font-semibold!
               leading-tight
-              text-[#7d1f2d]
+               text-[#7d1f2d]!
               md:text-4xl
             "
           >
@@ -66,7 +70,7 @@ const App = () => {
           </h1>
 
           {/* Divider */}
-          <div className="mx-auto mt-5 flex items-center justify-center gap-4">
+          {/* <div className="mx-auto mt-5 flex items-center justify-center gap-4">
             <span className="h-px w-16 bg-[#c9973e]/60" />
 
             <span className="text-xl text-[#c9973e]">
@@ -74,7 +78,7 @@ const App = () => {
             </span>
 
             <span className="h-px w-16 bg-[#c9973e]/60" />
-          </div>
+          </div> */}
 
           {/* Couple */}
           <div
@@ -129,10 +133,10 @@ const App = () => {
 
             <h2
               className="
-                font-bengali
-                text-3xl
-                font-semibold
-                text-[#7d1f2d]
+                font-bengali!
+                text-3xl!
+                font-semibold!
+                text-[#7d1f2d]!
                 md:text-4xl
               "
             >
@@ -144,7 +148,7 @@ const App = () => {
             </h2>
 
             {/* English Date */}
-            <p className="mt-3 font-bengali text-base text-[#6b4a3a]">
+            <p className="mt-3 font-bengali! text-base! text-[#6b4a3a]!">
               ২১শে নভেম্বর, ২০২৬
             </p>
 
