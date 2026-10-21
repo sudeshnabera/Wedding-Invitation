@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./HeroSection.css";
 
 const HeroSection = () => {
+  useEffect(()=>{
+      window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  },[])
   return (
     <section className="relative isolate overflow-hidden bg-[#fff8ed] text-[#473c32]">
       {/* Subtle background details */}
@@ -100,7 +107,7 @@ const HeroSection = () => {
             </div>
 
             {/* Invitation actions */}
-            <div className="mt-8 flex w-full flex-col items-center">
+            {/* <div className="mt-8 flex w-full flex-col items-center">
               <a
                 href="#our-story"
                 className="inline-flex items-center gap-2 font-bengali text-sm text-[#7d1f2d] transition hover:text-[#b18b53]"
@@ -108,7 +115,7 @@ const HeroSection = () => {
                 আমাদের গল্প পড়ুন
                 <span>↓</span>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* RIGHT: Couple illustration */}

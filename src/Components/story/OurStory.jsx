@@ -45,7 +45,7 @@ export default function OurStory() {
     <section id="our-story" className="our-story">
       <div className="story-inner">
         <header className="story-header">
-          <span className="story-label">♥ OUR STORY ♥</span>
+          {/* <span className="story-label">♥ OUR STORY ♥</span> */}
           <h2>আমাদের গল্প</h2>
           <p>সম্বন্ধ থেকে শুরু, ভালোবাসায় পূর্ণতা...</p>
         </header>

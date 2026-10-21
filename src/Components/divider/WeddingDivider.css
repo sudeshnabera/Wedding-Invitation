@@ -1,0 +1,54 @@
+
+.wedding-divider {
+  --divider-color: #B88B48;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: min(520px, 86%);
+  margin: 0 auto;
+  padding: 26px 0;
+  color: var(--divider-color);
+}
+
+.wedding-divider.tone-maroon {
+  --divider-color: #842333;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    currentColor 45%,
+    currentColor
+  );
+  opacity: 0.7;
+}
+
+.divider-line:last-child {
+  transform: scaleX(-1);
+}
+
+.divider-ornament {
+  display: block;
+  flex: 0 0 76px;
+  width: 76px;
+  height: 42px;
+  overflow: visible;
+}
+
+@media (max-width: 600px) {
+  .wedding-divider {
+    gap: 8px;
+    padding: 18px 0;
+  }
+
+  .divider-ornament {
+    flex-basis: 62px;
+    width: 62px;
+    height: 34px;
+  }
+}

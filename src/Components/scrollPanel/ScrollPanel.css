@@ -1,0 +1,19 @@
+
+.scroll-section {
+  position: relative;
+  width: 100%;
+  isolation: isolate;
+}
+
+/* Keep the page stable while sections animate */
+.wedding-page {
+  width: 100%;
+  overflow-x: clip;
+}
+
+/* Respect visitors who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-section {
+    scroll-behavior: auto;
+  }
+}

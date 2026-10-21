@@ -1,0 +1,159 @@
+
+.family-invitation {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px 16px 20px;
+  overflow: hidden;
+  border: 1px solid #e7cda7;
+  border-radius: 0 0 12px 12px;
+  background: #fff8ef;
+  color: #7d1f2d;
+  text-align: center;
+}
+
+.family-ornament {
+  margin-bottom: 8px;
+  color: #b88943;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.family-heading {
+  margin: 0;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(21px, 3vw, 26px);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.family-subtitle {
+  margin: 7px 0;
+  color: #785c4c;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 17px;
+}
+
+.family-couple {
+  margin: 0 0 7px;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.family-couple span {
+  color: #a8243a;
+  font-size: 16px;
+}
+
+.family-description {
+  max-width: 850px;
+  margin: 0 auto 8px;
+  color: #715747;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(13px, 2vw, 16px);
+  line-height: 1.9;
+}
+
+.family-invite-label {
+  margin: 0 0 14px;
+  color: #b88943;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 14px;
+}
+
+.family-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+
+.family-card {
+  box-sizing: border-box;
+  padding: 18px 14px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: #f4e7d5;
+}
+
+.family-flower {
+  display: block;
+  margin-bottom: 4px;
+  color: #b31e3a;
+  font-size: 23px;
+}
+
+.family-card-title {
+  margin: 0 0 15px;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 19px;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(125, 31, 45, 0.12);
+
+}
+
+.family-members {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.family-member {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+
+.family-member:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.family-relation {
+  color: #9a7543;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 13px;
+}
+
+.family-member-name {
+  color: #7d1f2d;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.family-footer {
+  margin: 20px auto 0;
+  color: #80675b;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+@media (max-width: 560px) {
+  .family-invitation {
+    padding: 22px 10px 16px;
+  }
+
+  .family-cards {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    gap: 12px;
+  }
+
+  .family-card {
+    padding: 18px 12px;
+  }
+
+  .family-card-title {
+    font-size: 18px;
+  }
+
+  .family-member-name {
+    font-size: 15px;
+  }
+}

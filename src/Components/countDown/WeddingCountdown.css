@@ -1,0 +1,108 @@
+.countdown-section {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 20px;
+  background: #7d1f2d;
+  color: #fff8ed;
+  text-align: center;
+}
+
+.countdown-flower {
+  display: block;
+  margin-bottom: 15px;
+  color: #e1bd76;
+  font-size: 32px;
+}
+
+.countdown-eyebrow {
+  margin: 0 0 12px;
+  color: #e1bd76;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 15px;
+}
+
+.countdown-title {
+  margin: 0;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(27px, 5vw, 42px);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.countdown-couple {
+  margin: 22px 0 8px;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(23px, 4vw, 32px);
+}
+
+.countdown-couple span {
+  padding: 0 8px;
+  color: #e1bd76;
+}
+
+.countdown-date {
+  margin: 0 0 34px;
+  color: #e1bd76;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 16px;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 100px));
+  justify-content: center;
+  gap: 14px;
+}
+
+.countdown-box {
+  display: flex;
+  min-height: 108px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid rgba(225, 189, 118, 0.8);
+  border-radius: 8px;
+  background: rgba(255, 248, 237, 0.05);
+}
+
+.countdown-number {
+  color: #f2dba8;
+  font-size: clamp(27px, 5vw, 38px);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.countdown-label {
+  color: #fff8ed;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 13px;
+}
+
+.countdown-message {
+  margin: 28px auto;
+  color: #f2dba8;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 24px;
+}
+
+.countdown-bottom {
+  margin-top: 32px;
+  color: #e1bd76;
+  letter-spacing: 8px;
+}
+
+@media (max-width: 480px) {
+  .countdown-section {
+    padding: 65px 16px;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, minmax(0, 110px));
+    gap: 12px;
+  }
+
+  .countdown-box {
+    min-height: 95px;
+  }
+}

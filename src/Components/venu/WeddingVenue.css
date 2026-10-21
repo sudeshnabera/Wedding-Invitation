@@ -1,0 +1,166 @@
+/* .venue-section {
+  padding: 85px 20px;
+  background: #fff8ed;
+  color: #7d1f2d;
+  text-align: center;
+  overflow: hidden;
+}
+
+.venue-eyebrow {
+  margin: 0 0 10px;
+  color: #a47736;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 20px;
+}
+
+.venue-title {
+  margin: 0;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(14px, 5vw, 23px);
+  font-weight: 600;
+}
+
+.venue-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 22px auto 38px;
+  color: #c9973e;
+}
+
+.venue-divider::before,
+.venue-divider::after {
+  width: 65px;
+  height: 1px;
+  background: #c9973e;
+  content: "";
+}
+
+.venue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+
+.venue-card {
+  position: relative;
+  padding: 38px 24px;
+  border: 1px solid #d9bd82;
+  border-radius: 160px 160px 12px 12px;
+  background: rgba(255, 255, 255, 0.48);
+  box-shadow: 0 12px 35px rgba(93, 39, 31, 0.07);
+}
+
+.venue-number {
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  color: #c9973e;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 13px;
+}
+
+.venue-icon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  margin: 12px auto 18px;
+  place-items: center;
+  border: 1px solid #c9973e;
+  border-radius: 50%;
+  color: #c9973e;
+  font-size: 30px;
+}
+
+.venue-label {
+  margin: 0 0 12px;
+  color: #a47736;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.venue-card h3 {
+  margin: 0 0 12px;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(21px, 3vw, 20px);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
+
+.venue-address {
+  margin: 0 auto;
+  color: #6e5a50;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.venue-note {
+  min-height: 48px;
+  margin: 18px 0 24px;
+  color: #80675b;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.venue-map-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 11px 22px;
+  border: 1px solid #7d1f2d;
+  border-radius: 30px;
+  background: #7d1f2d;
+  color: #fff8ed;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.venue-map-button:hover {
+  background: transparent;
+  color: #7d1f2d;
+}
+
+.venue-home-note {
+  display: inline-block;
+  padding: 11px 18px;
+  border: 1px solid #d9bd82;
+  border-radius: 30px;
+  color: #7d1f2d;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 13px;
+}
+
+.venue-footer {
+  margin: 32px auto 0;
+  color: #80675b;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+@media (max-width: 600px) {
+  .venue-section {
+    padding: 65px 16px;
+  }
+
+  .venue-grid {
+    grid-template-columns: 1fr;
+    max-width: 390px;
+    gap: 22px;
+  }
+
+  .venue-card {
+    padding: 35px 22px;
+    border-radius: 120px 120px 12px 12px;
+  }
+} */

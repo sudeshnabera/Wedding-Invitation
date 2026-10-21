@@ -1,0 +1,333 @@
+
+.wedding-footer {
+  --footer-maroon: #7d1f2d;
+  --footer-deep-maroon: #5b1420;
+  --footer-gold: #c9973e;
+  --footer-light-gold: #e8c77f;
+  --footer-cream: #fff5e5;
+  --footer-text: #f9e8c8;
+
+  position: relative;
+  overflow: hidden;
+  color: var(--footer-text);
+  background:
+    radial-gradient(
+      ellipse at 50% 35%,
+      rgba(151, 42, 54, 0.55),
+      transparent 65%
+    ),
+    var(--footer-deep-maroon);
+  text-align: center;
+}
+
+/* Top decorative border */
+
+.footer-top-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 48px;
+  padding: 0 16px;
+  border-top: 2px solid var(--footer-gold);
+  border-bottom: 1px solid rgba(201, 151, 62, 0.5);
+  background: var(--footer-maroon);
+}
+
+.footer-border-flower,
+.footer-border-lotus {
+  color: var(--footer-light-gold);
+  font-size: 20px;
+}
+
+.footer-border-lotus {
+  font-size: 25px;
+}
+
+.footer-border-line {
+  width: min(20%, 100px);
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--footer-gold)
+  );
+}
+
+.footer-border-line:nth-of-type(4) {
+  transform: rotate(180deg);
+}
+
+/* Main footer content */
+
+.footer-content {
+  position: relative;
+  isolation: isolate;
+  padding: 62px 20px 45px;
+}
+
+.footer-content::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background:
+    radial-gradient(
+      ellipse at top left,
+      rgba(201, 151, 62, 0.08),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at bottom right,
+      rgba(201, 151, 62, 0.08),
+      transparent 38%
+    );
+  content: "";
+  pointer-events: none;
+}
+
+.footer-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.footer-ornament-line {
+  width: 75px;
+  height: 1px;
+  background: var(--footer-gold);
+}
+
+.footer-heart {
+  color: var(--footer-light-gold);
+  font-size: 22px;
+}
+
+.footer-blessing {
+  margin: 0 auto 24px;
+  color: var(--footer-light-gold);
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(20px, 3vw, 30px);
+  font-weight: 500;
+  line-height: 1.9;
+}
+
+.footer-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 25px auto;
+  color: var(--footer-gold);
+  font-size: 15px;
+}
+
+.footer-divider-lotus {
+  font-size: 27px;
+}
+
+.footer-thank-you {
+  margin: 0 auto 26px;
+  color: #f2dfc2;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(14px, 2vw, 17px);
+  line-height: 2;
+}
+
+.footer-with-love {
+  margin: 0 0 12px;
+  color: var(--footer-light-gold);
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 15px;
+}
+
+.footer-couple {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0;
+  color: var(--footer-cream);
+  font-family: "Noto Serif Bengali", serif;
+  font-size: clamp(30px, 5vw, 44px);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.footer-couple-heart {
+  color: var(--footer-light-gold);
+  font-size: 25px;
+}
+
+.footer-couple-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+  color: var(--footer-gold);
+}
+
+.footer-couple-decoration > span {
+  font-size: 23px;
+}
+
+.footer-date {
+  color: var(--footer-light-gold);
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 16px;
+}
+
+.footer-final-message {
+  margin: 30px auto 26px;
+  color: #f2dfc2;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* Back to top */
+
+.footer-back-to-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 10px 24px;
+  border: 1px solid var(--footer-light-gold);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--footer-light-gold);
+  cursor: pointer;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 14px;
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-back-to-top:hover {
+  transform: translateY(-3px);
+  background: var(--footer-light-gold);
+  color: var(--footer-deep-maroon);
+}
+
+.footer-up-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.footer-bottom-flourish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 34px;
+  color: var(--footer-gold);
+  font-size: 21px;
+}
+
+/* Cream bottom strip */
+
+.footer-cream-bottom {
+  padding: 22px 16px 26px;
+  border-top: 2px solid var(--footer-gold);
+  background:
+    radial-gradient(
+      ellipse at center top,
+      rgba(201, 151, 62, 0.12),
+      transparent 65%
+    ),
+    var(--footer-cream);
+  color: var(--footer-maroon);
+}
+
+.footer-bottom-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--footer-gold);
+}
+
+.footer-bottom-line {
+  width: min(22%, 120px);
+  height: 1px;
+  background: var(--footer-gold);
+}
+
+.footer-bottom-lotus {
+  font-size: 23px;
+}
+
+.footer-copyright {
+  margin: 16px 0 6px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.footer-copyright span {
+  padding: 0 4px;
+  color: #b11e35;
+}
+
+.footer-bengali-signature {
+  margin: 0;
+  color: #9a7543;
+  font-family: "Noto Serif Bengali", serif;
+  font-size: 13px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+  .footer-content {
+    padding: 48px 16px 35px;
+  }
+
+  .footer-blessing {
+    font-size: 19px;
+  }
+
+  .footer-thank-you {
+    font-size: 13px;
+  }
+
+  .footer-couple {
+    gap: 10px;
+    font-size: clamp(27px, 7vw, 34px);
+  }
+
+  .footer-couple-heart {
+    font-size: 20px;
+  }
+
+  .footer-date {
+    font-size: 14px;
+  }
+
+  .footer-final-message {
+    font-size: 13px;
+  }
+
+  .footer-bottom-flourish {
+    margin-top: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-back-to-top {
+    transition: none;
+  }
+
+  .footer-back-to-top:hover {
+    transform: none;
+  }
+}
