@@ -92,11 +92,58 @@
   letter-spacing: 8px;
 }
 
+.countdown-sankha {
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
+
+  width: 200px;
+  height: 140px;
+
+  object-fit: contain;
+  object-position: right bottom;
+
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+.countdown-porinay{
+   position: absolute;
+  left: 20px;
+  top: 0px;
+
+  width: 150px;
+  height: 140px;
+
+  object-fit: contain;
+  object-position: right bottom;
+
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
 @media (max-width: 480px) {
   .countdown-section {
     padding: 65px 16px;
   }
+  .countdown-sankha {
+    width: 90px;
+    height: 70px;
+    right: 10px;
+    bottom: 8px;
+  }
 
+
+  .countdown-porinay{
+  left: 6px;
+  top: 0px;
+
+   width: 90px;
+  height: 80px;
+
+}
   .countdown-grid {
     grid-template-columns: repeat(2, minmax(0, 110px));
     gap: 12px;

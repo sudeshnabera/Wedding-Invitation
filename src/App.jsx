@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Home from "./Components/Home";
 import "./app.css";
 import WeddingDivider from "./Components/divider/WeddingDivider";
 
 const App = () => {
   const [showHome, setShowHome] = useState(false);
-
+    useEffect(()=>{
+        window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },[])
   const handleEnter = () => {
     setShowHome(true);
   };
@@ -16,10 +21,8 @@ const App = () => {
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#fff8ed]">
-
       {/* Background Decorations */}
       <div className="absolute inset-0">
-
         <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#e7b85c]/10 blur-[100px]" />
 
         <div className="absolute left-5 top-10 text-3xl opacity-50 animate-float">
@@ -37,24 +40,21 @@ const App = () => {
         <div className="absolute bottom-10 right-8 text-3xl opacity-40 animate-float">
           🌸
         </div>
-
       </div>
 
       {/* Main Content */}
       <div className="relative z-10 flex min-h-screen items-center justify-center px-5 py-8">
-
         <div className="w-full max-w-5xl! text-center">
-
           {/* Blessing */}
-          <p className="animate-fade-down font-bengali text-sm  text-[#9b1c31]">
+          {/* <p className="animate-fade-down font-bengali text-sm  text-[#9b1c31]">
             যদিদং হৃদয়ং মম,
           </p>
           <p className="animate-fade-down font-bengali text-sm latter text-[#9b1c31]">
             তদস্তু হৃদয়ং তব
           </p>
-           <WeddingDivider variant="filigree" />
+          <WeddingDivider variant="filigree" /> */}
           {/* Heading */}
-          <h1
+          {/* <h1
             className="
               mt-4
               animate-fade-up!
@@ -67,9 +67,25 @@ const App = () => {
             "
           >
             আমাদের বিবাহের নিমন্ত্রণ
-          </h1>
-
+          </h1> */}
+          <div className="mt-6 flex w-full justify-center">
+            <img
+              src="/images/biyer_chithi.png"
+              alt="বিয়ের চিঠি"
+              className="
+                h-auto
+                w-full
+                max-w-4xl!
+                max-h-[150px]!
+                lg:max-w-6xl!
+                lg:max-h-[150px]!
+                sm:max-h-[120px]!
+                object-contain
+              "
+            />
+          </div>
           {/* Divider */}
+          <WeddingDivider variant="filigree" />
           {/* <div className="mx-auto mt-5 flex items-center justify-center gap-4">
             <span className="h-px w-16 bg-[#c9973e]/60" />
 
@@ -91,7 +107,6 @@ const App = () => {
               animate-couple
             "
           >
-
             <div
               className="
                 absolute
@@ -125,12 +140,10 @@ const App = () => {
                 drop-shadow-[0_20px_25px_rgba(125,31,45,0.15)]
               "
             />
-
           </div>
 
           {/* Names */}
           <div className="relative z-20 mt-2 animate-fade-up">
-
             <h2
               className="
                 font-bengali!
@@ -141,9 +154,7 @@ const App = () => {
               "
             >
               প্রীতম
-              <span className="mx-3 text-[#c9973e]">
-                ♥
-              </span>
+              <span className="mx-3 text-[#c9973e]">♥</span>
               সুদেষ্ণা
             </h2>
 
@@ -156,7 +167,6 @@ const App = () => {
             <p className="mt-1 font-bengali text-sm text-[#9b1c31]">
               ৪ঠা অগ্রহায়ণ, ১৪৩৩
             </p>
-
           </div>
 
           {/* Enter Button */}
@@ -190,11 +200,8 @@ const App = () => {
           <p className="mt-6! font-bengali text-xs tracking-widest text-[#9b1c31]/70">
             আপনাদের সস্নেহ উপস্থিতি আমাদের একান্ত কাম্য
           </p>
-
         </div>
-
       </div>
-
     </main>
   );
 };

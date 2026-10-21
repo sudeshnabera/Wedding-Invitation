@@ -35,20 +35,19 @@ const WeddingCountdown = () => {
 
   return (
     <section className="countdown-section" id="countdown">
+      <img
+        className="countdown-porinay"
+        src="/images/countdown_porinay.png"
+        alt="Traditional Bengali wedding shankha"
+      />
       <span className="countdown-flower">❋</span>
 
-      <p className="countdown-eyebrow">
-       আর মাত্র কিছুদিন… ❤️
-      </p>
+      <p className="countdown-eyebrow">আর মাত্র কিছুদিন… ❤️</p>
 
-      <p className="countdown-date">
-        ২১শে নভেম্বর, ২০২৬
-      </p>
+      <p className="countdown-date">২১শে নভেম্বর, ২০২৬</p>
 
       {timeLeft.isComplete ? (
-        <p className="countdown-message">
-          আজ আমাদের শুভ বিবাহের দিন! ♡
-        </p>
+        <p className="countdown-message">আজ আমাদের শুভ বিবাহের দিন! ♡</p>
       ) : (
         <div className="countdown-grid">
           {items.map((item) => (
@@ -56,15 +55,18 @@ const WeddingCountdown = () => {
               <span className="countdown-number">
                 {String(item.value).padStart(2, "0")}
               </span>
-              <span className="countdown-label">
-                {item.label}
-              </span>
+              <span className="countdown-label">{item.label}</span>
             </div>
           ))}
         </div>
       )}
 
       <div className="countdown-bottom">✦ ❋ ✦</div>
+      <img
+        className="countdown-sankha"
+        src="/images/sankha.png"
+        alt="Traditional Bengali wedding shankha"
+      />
     </section>
   );
 };

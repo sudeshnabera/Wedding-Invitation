@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./FamilyInvitation.css";
 
@@ -25,44 +24,39 @@ const families = [
 const FamilyInvitation = () => {
   return (
     <section className="family-invitation">
-      <div className="family-ornament">❧ ── ♥ ── ❧</div>
-
-      <h2 className="text-3xl sm:text-5xl font-atma! font-bold text-goldLight tracking-wide drop-shadow-md mb-2">
+      <h2 className="text-xl! sm:text-xl! font-atma! font-bold! text-[#7d1f2d]! tracking-wide! drop-shadow-md! mb-2">
         দুই পরিবারের পক্ষ থেকে
       </h2>
 
-      <p className="family-subtitle">আমাদের প্রিয়</p>
-
-      <h3 className="family-couple">
-        প্রীতম <span>♥</span> সুদেষ্ণা
-      </h3>
-
       <p className="family-description">
-        -এর শুভ বিবাহ অনুষ্ঠানে আপনাদের সপরিবারে উপস্থিতি
-        আমাদের আনন্দকে পূর্ণতা দেবে।
+        আমাদের জীবনের এই বিশেষ দিনে আপনাদের উপস্থিতি ও প্রীতিময় আগমন একান্ত কাম্য।
       </p>
 
       <p className="family-invite-label">সাদর আমন্ত্রণ</p>
-
+      {/* <div className="hidden md:flex absolute inset-0 items-center justify-center pointer-events-none z-10">
+        <div className="">
+          <img src="/images/topor_mukut.png"  className="h-15 w-full" />
+        </div>
+      </div> */}
+       <div className="family-mukut">
+    <img
+      src="/images/topor_mukut.png"
+      alt="Bengali wedding topor mukut"
+    />
+  </div>
       <div className="family-cards">
         {families.map((family) => (
           <article className="family-card" key={family.id}>
             <span className="family-flower">❀</span>
 
-            <h4 className="family-card-title">
-              {family.title}
-            </h4>
+            <h4 className="family-card-title">{family.title}</h4>
 
             <div className="family-members">
               {family.members.map((member) => (
                 <div className="family-member" key={member.relation}>
-                  <span className="family-relation">
-                    {member.relation} :
-                  </span>
+                  <span className="family-relation">{member.relation} :</span>
 
-                  <span className="family-member-name">
-                    {member.name}
-                  </span>
+                  <span className="family-member-name">{member.name}</span>
                 </div>
               ))}
             </div>

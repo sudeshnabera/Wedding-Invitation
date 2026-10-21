@@ -76,14 +76,14 @@ const HeroSection = () => {
 
               {/* Wedding date — centered */}
               <div className="mt-5 flex flex-col items-center gap-2 text-center">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[#c9973e]/50 text-xl text-[#9b1c31]">
-                  ♡
+                <span className="flex h-20 w-20 items-center justify-center rounded-full  text-xl text-[#9b1c31]">
+                  <img src="/images/hero_bibaha.png"/>
                 </span>
 
                 <div>
-                  <p className="font-bengali text-sm text-[#8c775e]">
+                  {/* <p className="font-bengali text-sm text-[#8c775e]">
                     শুভ বিবাহ
-                  </p>
+                  </p> */}
 
                   <p className="font-bengali text-base font-medium text-[#7d1f2d]">
                     ২১শে নভেম্বর, ২০২৬
