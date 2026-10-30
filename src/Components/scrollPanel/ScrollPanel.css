@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   isolation: isolate;
+  background-color: white;
 }
 
 /* Keep the page stable while sections animate */

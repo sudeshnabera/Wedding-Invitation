@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import "./HeroSection.css";
 
 const HeroSection = () => {
-  useEffect(()=>{
-      window.scrollTo({
+  useEffect(() => {
+    window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  },[])
+  }, []);
   return (
     <section className="relative isolate overflow-hidden bg-[#fff8ed] text-[#473c32]">
       {/* Subtle background details */}
@@ -77,7 +77,7 @@ const HeroSection = () => {
               {/* Wedding date — centered */}
               <div className="mt-5 flex flex-col items-center gap-2 text-center">
                 <span className="flex h-20 w-20 items-center justify-center rounded-full  text-xl text-[#9b1c31]">
-                  <img src="/images/hero_bibaha.png"/>
+                  <img src="/images/hero_bibaha.webp" />
                 </span>
 
                 <div>
@@ -133,7 +133,7 @@ const HeroSection = () => {
               </div>
 
               <img
-                src="/images/wedding-couple.png"
+                src="/images/wedding-couple.webp"
                 alt="প্রীতম ও সুদেষ্ণার বিয়ের সাজে যুগল"
                 className="relative z-10 mx-auto max-h-[46vh] w-auto max-w-full object-contain drop-shadow-[0_16px_18px_rgba(70,50,35,0.12)] md:max-h-[68vh]"
               />
@@ -145,9 +145,9 @@ const HeroSection = () => {
                 </p>
               </div>
 
-              <p className="mt-6 text-center font-bengali text-xs tracking-[0.2em] text-[#9b8b72]">
+              {/* <p className="mt-6 text-center font-bengali text-xs tracking-[0.2em] text-[#9b8b72]">
                 ২১ · ১১ · ২০২৬
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

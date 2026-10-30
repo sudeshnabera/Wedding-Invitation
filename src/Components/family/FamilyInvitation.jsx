@@ -29,21 +29,15 @@ const FamilyInvitation = () => {
       </h2>
 
       <p className="family-description">
-        আমাদের জীবনের এই বিশেষ দিনে আপনাদের উপস্থিতি ও প্রীতিময় আগমন একান্ত কাম্য।
+        আমাদের জীবনের এই বিশেষ দিনে আপনাদের উপস্থিতি ও প্রীতিময় আগমন একান্ত
+        কাম্য।
       </p>
 
       <p className="family-invite-label">সাদর আমন্ত্রণ</p>
-      {/* <div className="hidden md:flex absolute inset-0 items-center justify-center pointer-events-none z-10">
-        <div className="">
-          <img src="/images/topor_mukut.png"  className="h-15 w-full" />
-        </div>
-      </div> */}
-       <div className="family-mukut">
-    <img
-      src="/images/topor_mukut.png"
-      alt="Bengali wedding topor mukut"
-    />
-  </div>
+     
+      <div className="family-mukut">
+        <img src="/images/topor_mukut.webp" alt="Bengali wedding topor mukut" />
+      </div>
       <div className="family-cards">
         {families.map((family) => (
           <article className="family-card" key={family.id}>

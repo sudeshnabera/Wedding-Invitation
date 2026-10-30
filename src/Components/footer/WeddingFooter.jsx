@@ -29,51 +29,57 @@ const WeddingFooter = () => {
         </div>
 
         <p className="footer-blessing">
-          শুভ পরিণয়ে বাঁধা পড়ুক দুটি মন,
-          <br />
-          ভালোবাসায় ভরে উঠুক সারাটি জীবন।
+          একটি নতুন পথচলা
+          {/* <br />
+          ভালোবাসায় ভরে উঠুক সারাটি জীবন। */}
         </p>
 
-        <div className="footer-divider">
+        {/* <div className="footer-divider">
           <span>✦</span>
           <span className="footer-divider-lotus">❋</span>
           <span>✦</span>
-        </div>
+        </div> */}
 
         <p className="footer-thank-you">
-          আমাদের এই বিশেষ দিনে পাশে থাকার জন্য
+          দুটি মনের মিলনে, দুটি পরিবারের বন্ধনে
+
           <br />
-          আপনাদের সকলকে জানাই আন্তরিক কৃতজ্ঞতা।
+         শুরু হলো আমাদের জীবনের নতুন অধ্যায়।
         </p>
 
-        <p className="footer-with-love">সস্নেহে ও সশ্রদ্ধায়</p>
+        <p className="footer-with-love">ভালোবাসা ও আশীর্বাদে</p>
 
-        <h2 className="footer-couple">
+        {/* <h2 className="footer-couple">
           <span>প্রীতম</span>
           <span className="footer-couple-heart">♥</span>
           <span>সুদেষ্ণা</span>
-        </h2>
+        </h2> */}
 
-        <div className="footer-couple-decoration">
+        {/* <div className="footer-couple-decoration">
           <span>❧</span>
           <span className="footer-date">
             ২১শে নভেম্বর, ২০২৬
           </span>
           <span>❧</span>
-        </div>
+        </div> */}
 
         <p className="footer-final-message">
-          নতুন পথচলায় আপনাদের আশীর্বাদ আমাদের পাথেয়।
+          আমাদের এই বিশেষ মুহূর্তের গল্পে
+          <br/>
+          সঙ্গী হওয়ার জন্য আন্তরিক ধন্যবাদ।
         </p>
-
-        <button
+        <div className="footer-back-to-top">
+           ❀ শুভ পরিণয় ❀
+        </div>
+         
+        {/* <button
           type="button"
           className="footer-back-to-top"
           onClick={handleBackToTop}
         >
           <span className="footer-up-icon">↑</span>
           <span>উপরে ফিরে যান</span>
-        </button>
+        </button> */}
 
         <div className="footer-bottom-flourish">
           <span>❧</span>

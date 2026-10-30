@@ -2,15 +2,16 @@ import { useState, useEffect } from "react";
 import Home from "./Components/Home";
 import "./App.css";
 import WeddingDivider from "./Components/divider/WeddingDivider";
+import { ArrowRight, Heart } from "lucide-react";
 
 const App = () => {
   const [showHome, setShowHome] = useState(false);
-    useEffect(()=>{
-        window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    },[])
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const handleEnter = () => {
     setShowHome(true);
   };
@@ -20,7 +21,7 @@ const App = () => {
   }
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#fff8ed]">
+    <main className="app relative min-h-screen overflow-hidden bg-[#fff8ed]">
       {/* Background Decorations */}
       <div className="absolute inset-0">
         <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#e7b85c]/10 blur-[100px]" />
@@ -34,11 +35,11 @@ const App = () => {
         </div>
 
         <div className="absolute bottom-20 left-8 text-3xl opacity-40 animate-float-slow">
-          🌺
+          🌸
         </div>
 
         <div className="absolute bottom-10 right-8 text-3xl opacity-40 animate-float">
-          🌸
+          🌼
         </div>
       </div>
 
@@ -70,7 +71,7 @@ const App = () => {
           </h1> */}
           <div className="mt-6 flex w-full justify-center">
             <img
-              src="/images/biyer_chithi.png"
+              src="/images/biyer_chithi.webp"
               alt="বিয়ের চিঠি"
               className="
                 h-auto
@@ -85,7 +86,12 @@ const App = () => {
             />
           </div>
           {/* Divider */}
-          <WeddingDivider variant="filigree" />
+          {/* <WeddingDivider variant="filigree" className="bg-transparent!" /> */}
+          <div className="app-ornament">
+            <span className="app-ornament-line" />
+            <span className="app-heart">♥</span>
+            <span className="app-ornament-line" />
+          </div>
           {/* <div className="mx-auto mt-5 flex items-center justify-center gap-4">
             <span className="h-px w-16 bg-[#c9973e]/60" />
 
@@ -125,7 +131,7 @@ const App = () => {
             />
 
             <img
-              src="/images/wedding-couple.png"
+              src="/images/wedding-couple.webp"
               alt="Pritam and Sudeshna"
               className="
                 relative
@@ -170,30 +176,25 @@ const App = () => {
           </div>
 
           {/* Enter Button */}
-          <button
-            onClick={handleEnter}
-            className="
-              mt-4
-              rounded-full
-              border
-              border-[#c9973e]
-              bg-[#7d1f2d]
-              px-9
-              py-3
-              font-bengali
-              text-base
-              text-white
-              shadow-lg
-              shadow-[#7d1f2d]/20
-              transition-all
-              duration-300
-              hover:-translate-y-1
-              hover:bg-[#641724]
-              hover:shadow-xl
-              active:scale-95
-            "
-          >
-            ✨ নিমন্ত্রণ গ্রহণ করুন ✨
+
+          <button className="letter-button" onClick={handleEnter}>
+            <span className="letter-flower left-flower">❀</span>
+
+            <span className="letter-button-text">
+              চিঠি পড়ার জন্য ক্লিক করুন
+            </span>
+
+            <span className="letter-divider">
+              <span></span>
+              <Heart size={15} fill="currentColor" />
+              <span></span>
+            </span>
+
+            <span className="letter-arrow">
+              <ArrowRight size={23} />
+            </span>
+
+            <span className="letter-flower right-flower">❀</span>
           </button>
 
           {/* Bottom Text */}

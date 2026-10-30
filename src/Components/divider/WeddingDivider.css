@@ -1,7 +1,7 @@
 
 .wedding-divider {
   --divider-color: #B88B48;
-
+  background-color: white!important;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,4 +1,3 @@
-
 import "./WeddingTransition.css";
 
 export default function WeddingTransition() {
@@ -8,9 +7,7 @@ export default function WeddingTransition() {
         ❧ <span>✦</span> ❧
       </div> */}
 
-      <p className="transition-eyebrow">
-        একটা ছোট্ট ঘোষণা
-      </p>
+      <p className="transition-eyebrow">একটা ছোট্ট ঘোষণা</p>
 
       <h2>গল্প থেকে এবার অনুষ্ঠানে!</h2>
 
@@ -21,24 +18,24 @@ export default function WeddingTransition() {
       </p>
 
       <div className="transition-bottom">
-  <img
-    src="/images/panpata.png"
-    alt="Panpata decoration"
-    className="transition-decoration transition-panpata"
-  />
+        <img
+          src="/images/panpata.webp"
+          alt="Panpata decoration"
+          className="transition-decoration transition-panpata"
+        />
 
-  <div className="transition-center">
-    <span>❀</span>
-    <span className="transition-arrow">↓</span>
-    <span>❀</span>
-  </div>
+        <div className="transition-center">
+          <span>❀</span>
+          <span className="transition-arrow">↓</span>
+          <span>❀</span>
+        </div>
 
-  <img
-    src="/images/palki.png"
-    alt="Palki decoration"
-    className="transition-decoration transition-palki"
-  />
-</div>
+        <img
+          src="/images/palki.webp"
+          alt="Palki decoration"
+          className="transition-decoration transition-palki"
+        />
+      </div>
     </section>
   );
 }

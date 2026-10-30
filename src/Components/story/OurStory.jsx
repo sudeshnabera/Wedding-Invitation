@@ -3,39 +3,39 @@ import "./OurStory.css";
 const stories = [
   {
     number: "01",
-    title: "দুই পরিবারের দেখা",
-    image: "/images/story_family.png",
-    caption: "সম্বন্ধের শুরুটা হয়েছিল দুই পরিবারের হাত ধরে।",
+    title: "তাঁর চোখে প্রথম আমি",
+    image: "/images/story_family.webp",
+    caption: "তাঁর চোখে প্রথমবার ধরা দিল আমার পরিচয়। ❤️",
   },
   {
     number: "02",
     title: "একটা Friend Request",
-    image: "/images/story_chat.png",
+    image: "/images/story_chat.webp",
     caption: "একটা Request, তারপর একটু একটু কথা! 💌",
   },
   {
     number: "03",
     title: "কথা থেকে ভালো লাগা",
-    image: "/images/story_feeling.png",
-    caption: "চ্যাটের গল্প এবার সামনাসামনি। ❤️",
+    image: "/images/story_feeling.webp",
+    caption: "এবার চ্যাটে গল্প শুরু। ❤️",
   },
   {
     number: "04",
     title: "প্রথম দেখা",
-    image: "/images/story_meeting.png",
+    image: "/images/story_meeting.webp",
     caption: "চ্যাটের গল্প এবার সামনাসামনি। ❤️",
   },
-  
+
   {
     number: "05",
     title: "দুই পরিবারের সম্মতি",
-    image: "/images/story_approve.png",
+    image: "/images/story_approve.webp",
     caption: "অবশেষে সবার 'হ্যাঁ'! ❤️",
   },
   {
     number: "06",
     title: "অবশেষে পরিণয়",
-    image: "/images/story_porinay.png",
+    image: "/images/story_porinay.webp",
     caption: "দুই পরিবারের সম্মতিতে একসাথে পথচলা। 💍",
   },
 ];
@@ -69,14 +69,12 @@ export default function OurStory() {
               <div className="story-title text-[##91755d]!">
                 <p className="">{story.caption}</p>
               </div>
-              
             </article>
           ))}
         </div>
 
         <footer className="story-footer">
           <p>একটা ছোট্ট সম্বন্ধ, সারাজীবনের বন্ধন...</p>
-          
         </footer>
       </div>
     </section>

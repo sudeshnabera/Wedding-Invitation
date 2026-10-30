@@ -208,3 +208,178 @@
     animation: none;
   }
 }
+
+
+.letter-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  width: 100%;
+  max-width: 360px;
+  min-height: 68px;
+  margin: 20px auto;
+  padding: 12px 65px 12px 45px;
+
+  background: linear-gradient(
+    135deg,
+    #fffaf0,
+    #fff0d9,
+    #fffaf0
+  );
+
+  border: 1.5px solid #d5a64c;
+  border-radius: 50px;
+
+  color: #7d1f2d;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 600;
+
+  box-shadow:
+    0 5px 15px rgba(107, 29, 47, 0.12),
+    inset 0 0 0 3px #fff8e9,
+    inset 0 0 0 4px rgba(213, 166, 76, 0.35);
+
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Button Text */
+.letter-button-text {
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+/* Floral Decorations */
+.letter-flower {
+  position: absolute;
+  color: #b8893e;
+  font-size: 30px;
+  opacity: 0.75;
+  transition: transform 0.3s ease;
+}
+
+.left-flower {
+  left: 12px;
+}
+
+.right-flower {
+  right: 65px;
+  font-size: 22px;
+}
+
+/* Heart Divider */
+.letter-divider {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #a52a43;
+}
+
+.letter-divider span {
+  width: 23px;
+  height: 1px;
+  background: #c89b51;
+}
+
+/* Arrow Circle */
+.letter-arrow {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #92283d, #641a2b);
+  color: #fff5df;
+
+  border: 2px solid #d7b36b;
+  border-radius: 50%;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.letter-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(107, 29, 47, 0.2);
+  border-color: #b8893e;
+}
+
+.letter-button:hover .letter-arrow {
+  transform: translateY(-50%) rotate(-35deg);
+  background: #a52a43;
+}
+
+.letter-button:hover .left-flower {
+  transform: rotate(25deg);
+}
+
+.letter-button:hover .right-flower {
+  transform: rotate(-25deg);
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .letter-button {
+    max-width: 330px;
+    min-height: 62px;
+    font-size: 15px;
+    padding-left: 38px;
+    padding-right: 58px;
+  }
+
+  .letter-arrow {
+    width: 42px;
+    height: 42px;
+  }
+
+  .letter-flower {
+    font-size: 25px;
+  }
+
+  .right-flower {
+    right: 56px;
+  }
+}
+
+.app{
+  --app-gold: #c9973e;
+   --app-light-gold: #9a0202;
+}
+
+.app-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.app-ornament-line {
+  width: 75px;
+  height: 1px;
+  background: var(--app-gold);
+}
+
+.app-heart {
+  color: var(--app-light-gold);
+  font-size: 22px;
+}

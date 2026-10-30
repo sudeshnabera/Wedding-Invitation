@@ -1,4 +1,3 @@
-
 .wedding-events {
   --cream: #fff3df;
   --gold: #e4c17f;
@@ -10,7 +9,7 @@
   overflow: hidden;
   padding: 30px 22px 24px;
   background-color: #8b291f;
-  background-image: url("/images/bengali-alpana-bg.png");
+  background-image: url("/images/bengali-alpana-bg.webp");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -27,7 +26,6 @@
   margin-bottom: 16px;
   color: var(--cream);
   text-align: center;
-  
 }
 
 .wedding-events-header h2 {

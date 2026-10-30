@@ -37,14 +37,14 @@ const WeddingCountdown = () => {
     <section className="countdown-section" id="countdown">
       <img
         className="countdown-porinay"
-        src="/images/countdown_porinay.png"
+        src="/images/countdown_porinay.webp"
         alt="Traditional Bengali wedding shankha"
       />
       <span className="countdown-flower">❋</span>
 
       <p className="countdown-eyebrow">আর মাত্র কিছুদিন… ❤️</p>
 
-      <p className="countdown-date">২১শে নভেম্বর, ২০২৬</p>
+      {/* <p className="countdown-date">২১শে নভেম্বর, ২০২৬</p> */}
 
       {timeLeft.isComplete ? (
         <p className="countdown-message">আজ আমাদের শুভ বিবাহের দিন! ♡</p>
@@ -64,7 +64,7 @@ const WeddingCountdown = () => {
       <div className="countdown-bottom">✦ ❋ ✦</div>
       <img
         className="countdown-sankha"
-        src="/images/sankha.png"
+        src="/images/sankha.webp"
         alt="Traditional Bengali wedding shankha"
       />
     </section>
